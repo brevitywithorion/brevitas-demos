@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /aqua-flow/
+Disallow: /templates/
+
+Sitemap: https://brevitywithorion.github.io/brevitas-demos/sitemap.xml
