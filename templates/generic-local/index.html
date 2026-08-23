@@ -108,6 +108,7 @@ BREVITAS GBP + AI OVERVIEW CHECKLIST (launch hygiene, not a ranking promise)
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
+        <a href="#reviews">Reviews</a>
         <a href="#visit">Visit</a>
         <a class="btn" href="tel:+17852008890">Call (785) 200-8890</a>
       </nav>
@@ -174,20 +175,15 @@ BREVITAS GBP + AI OVERVIEW CHECKLIST (launch hygiene, not a ranking promise)
         <details><summary>Service area?</summary><p>Lawrence first, then Eudora and Baldwin City makers who need a room.</p></details>
           </div>
         </div>
-        <div>
-          <h2 class="section-title">From neighbors</h2>
-          <div class="grid-2" style="grid-template-columns:1fr">
-          <article class="card">
-            <p class="quote">“Finally a room I can teach in without renting a banquet hall.”</p>
-            <p class="nap">— Tess H., Lawrence</p>
-          </article>
-          <article class="card">
-            <p class="quote">“Pop-up Saturday paid for the drive from Eudora.”</p>
-            <p class="nap">— Ben Y., Eudora</p>
-          </article>
-          </div>
-          <p class="nap">Quotes are sample copy for the demo, not Google reviews.</p>
-        </div>
+      </div>
+    </section>
+    <section id="reviews" class="reviews" data-place-id="">
+      <div class="wrap">
+        <p class="eyebrow">Reviews</p>
+        <h2 class="section-title">Reviews on Google</h2>
+        <div class="google-reviews-embed" hidden></div>
+        <p class="reviews-empty">Reviews stay on Google. This slot is empty until a Place ID is set. We do not reprint or invent quotes.</p>
+        <p><a class="btn warm" href="https://www.google.com/maps/search/?api=1&query=Riverfront+Co.%2C+800+Example+Harbor+St%2C+Lawrence%2C+KS+66044" rel="noopener noreferrer" target="_blank">Read and leave a review on Google</a></p>
       </div>
     </section>
     <section id="visit">
@@ -216,6 +212,31 @@ BREVITAS GBP + AI OVERVIEW CHECKLIST (launch hygiene, not a ranking promise)
       </div>
     </div>
   </footer>
+
+
+  <script>
+  (function () {
+    var root = document.getElementById("reviews");
+    if (!root) return;
+    var placeId = (root.getAttribute("data-place-id") || window.PLACE_ID || "").trim();
+    var embed = root.querySelector(".google-reviews-embed");
+    var empty = root.querySelector(".reviews-empty");
+    if (!placeId) {
+      if (embed) { embed.hidden = true; embed.replaceChildren(); }
+      if (empty) { empty.hidden = false; }
+      return;
+    }
+    if (empty) empty.hidden = true;
+    if (!embed) return;
+    var iframe = document.createElement("iframe");
+    iframe.title = "Google Maps listing and reviews";
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "no-referrer-when-downgrade";
+    iframe.src = "https://www.google.com/maps?q=place_id:" + encodeURIComponent(placeId) + "&output=embed";
+    embed.replaceChildren(iframe);
+    embed.hidden = false;
+  })();
+  </script>
 
   <div class="demo-switcher" role="navigation" aria-label="Brevitas demo styles">
     <span>Brevitas demo</span>
