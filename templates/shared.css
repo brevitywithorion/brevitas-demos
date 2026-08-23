@@ -186,3 +186,22 @@ footer.site-foot a { color: var(--ink); }
 .theme-pro { --accent: #243b53; --accent-2: #b8892d; --paper: #f5f4f0; }
 .theme-med { --accent: #0e4d4d; --accent-2: #2a6f97; --paper: #f3f8f7; }
 .theme-generic { --accent: #1c4a3e; --accent-2: #b8892d; --paper: #f7f1e6; }
+
+/* Google reviews — official embed only; empty until PLACE_ID / data-place-id */
+.reviews .google-reviews-embed {
+  min-height: 280px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--cream);
+  overflow: hidden;
+  margin: 0 0 1rem;
+}
+.reviews .google-reviews-embed iframe {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+  background: var(--cream);
+}
+.reviews .reviews-empty { margin: 0 0 1rem; }
+.reviews .btn.warm { background: var(--gold); color: var(--ink); }
