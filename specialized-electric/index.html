@@ -55,8 +55,8 @@
   }
   </script>
 </head>
-<body data-theme="truck">
-  <p class="banner">Brevitas demo · pick a look below · not live GBP · do not put this URL on Google Business Profile</p>
+<body data-layout="truck" data-skin="navy">
+  <p class="banner">Brevitas demo · pick a layout and color below · not live GBP · do not put this URL on Google Business Profile</p>
   <header class="site">
     <div class="wrap bar">
       <a class="brand" href="index.html">
@@ -154,11 +154,22 @@
       <p class="fine">Demo by Brevitas. Not a ranking promise. Do not put this github.io URL in a Google Business Profile field. Photos are this Lawrence shop’s van and mark, not Denver specializedelectric.com.</p>
     </div>
   </footer>
-  <div class="look-switcher" role="navigation" aria-label="Demo look switcher">
-    <span>Demo switcher · pick a style, not live GBP</span>
-    <button type="button" id="look-prev">Prev</button>
-    <strong id="look-name">Navy + orange truck</strong>
-    <button type="button" class="primary" id="look-next">Try another look</button>
+  <div class="demo-bar" role="navigation" aria-label="Demo layout and color">
+    <div class="group">
+      <span class="lbl">Layout</span>
+      <button type="button" id="layout-prev">Prev</button>
+      <strong id="layout-name">Van beside copy</strong>
+      <button type="button" class="primary" id="layout-next">Next layout</button>
+    </div>
+    <div class="group">
+      <span class="lbl">Color</span>
+      <div class="swatches">
+        <button type="button" class="swatch" data-skin="navy" title="Navy + orange" aria-label="Navy + orange"></button>
+        <button type="button" class="swatch" data-skin="amber" title="Charcoal + amber" aria-label="Charcoal + amber"></button>
+        <button type="button" class="swatch" data-skin="snow" title="White + orange" aria-label="White + orange"></button>
+        <button type="button" class="swatch" data-skin="slate" title="Slate + blue" aria-label="Slate + blue"></button>
+      </div>
+    </div>
   </div>
   <script src="site.js"></script>
 </body>
