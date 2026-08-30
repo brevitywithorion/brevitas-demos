@@ -1,3 +1,6 @@
 /brevitas-demos / 301
 /brevitas-demos/ / 301
 /brevitas-demos/* /:splat 301
+
+/work.html /work 301
+/templates.html /templates 301
