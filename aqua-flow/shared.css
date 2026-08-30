@@ -163,7 +163,11 @@ footer.site-foot a { color: var(--ink); }
 .foot-cta {
   background: #1a1814; color: #f3ead8; padding: 1rem 1.15rem; border-radius: 12px; margin-top: 1.1rem;
 }
-.foot-cta a { color: #e8c56a; }
+footer.site-foot .foot-cta a,
+footer.site-foot .foot-cta a:visited,
+footer.site-foot .foot-cta .__cf_email__ {
+  color: #e8c56a;
+}
 
 /* Demo chrome — not part of the fake business */
 .demo-switcher {
