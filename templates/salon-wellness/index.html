@@ -18,7 +18,7 @@ BREVITAS GBP + AI OVERVIEW CHECKLIST (launch hygiene, not a ranking promise)
   <title>Hair and wellness studio in Lawrence, KS | Goldleaf Studio</title>
   <meta name="description" content="Goldleaf Studio is a sample salon and wellness studio by Brevitas in Lawrence. Color, cuts, and quiet rooms. Demo only.">
   <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="#">
+  <link rel="canonical" href="https://orionwills.com/templates/salon-wellness/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hair and wellness studio in Lawrence, KS | Goldleaf Studio">
   <meta property="og:description" content="Goldleaf Studio is a sample salon and wellness studio by Brevitas in Lawrence. Color, cuts, and quiet rooms. Demo only.">
@@ -38,7 +38,7 @@ BREVITAS GBP + AI OVERVIEW CHECKLIST (launch hygiene, not a ranking promise)
     "description": "Goldleaf Studio is a sample salon and wellness studio by Brevitas in Lawrence. Color, cuts, and quiet rooms. Demo only.",
     "image": "../assets/salon.jpg",
     "telephone": "+17852004450",
-    "url": "#",
+    "url": "https://orionwills.com/templates/salon-wellness/",
     "priceRange": "$$",
     
     "address": {
@@ -99,11 +99,12 @@ BREVITAS GBP + AI OVERVIEW CHECKLIST (launch hygiene, not a ranking promise)
 
 </head>
 <body class="theme-salon">
-  <div class="sample-banner">Example site by Brevitas · not a live business · <a href="../../site/templates.html">Back to gallery</a></div>
+  <div class="sample-banner">Example site by Brevitas · not a live business · <a href="../../templates.html">Back to gallery</a></div>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="#top">Goldleaf Studio<small>Lawrence, Kansas</small></a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">Menu</button>
       <nav class="nav" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#about">About</a>
@@ -256,5 +257,12 @@ BREVITAS GBP + AI OVERVIEW CHECKLIST (launch hygiene, not a ranking promise)
     <a href="../retail/">Next</a>
   </div>
 
+
+  <script>
+  (function(){
+    var h=document.querySelector("header.site-header"), t=document.querySelector(".nav-toggle");
+    if(t&&h){ t.addEventListener("click", function(){ var o=h.classList.toggle("open"); t.setAttribute("aria-expanded", o?"true":"false"); }); }
+  })();
+  </script>
 </body>
 </html>

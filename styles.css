@@ -19,8 +19,9 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: var(--sans);
   color: var(--ink);
@@ -106,8 +107,8 @@ h3 { font-size: 1.55rem; line-height: 1.2; margin: 0 0 0.4rem; }
   color: var(--ink);
 }
 .brand img {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   object-fit: cover;
   border-radius: 2px;
 }
@@ -134,8 +135,8 @@ h3 { font-size: 1.55rem; line-height: 1.2; margin: 0 0 0.4rem; }
   display: none;
   border: 1px solid var(--line);
   background: transparent;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 2px;
   cursor: pointer;
 }

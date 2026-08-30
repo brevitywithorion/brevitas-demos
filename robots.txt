@@ -4,4 +4,4 @@ Disallow: /aqua-flow/
 Disallow: /specialized-electric/
 Disallow: /templates/
 
-Sitemap: https://brevitywithorion.github.io/brevitas-demos/sitemap.xml
+Sitemap: https://orionwills.com/sitemap.xml
