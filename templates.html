@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/skins.css">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -112,7 +113,7 @@
 }
 </script>
 </head>
-<body>
+<body class="has-skin-bar">
   <a class="skip" href="#main">Skip to content</a>
   <header class="nav-bar">
     <div class="wrap">
@@ -247,6 +248,19 @@
       <span><a href="/templates">Templates</a> · <a href="/work">Process</a> · <!--email_off--><a href="mailto:orion@orionwills.com">orion@orionwills.com</a><!--/email_off--> · <a href="tel:+17855415500">(785) 541-5500</a></span>
     </div>
   </footer>
+
+  <div class="demo-bar" role="navigation" aria-label="Demo color">
+    <div class="group">
+      <span class="lbl">Color</span>
+      <div class="swatches">
+        <button type="button" class="swatch" data-skin="navy" title="Navy + orange" aria-label="Navy + orange"></button>
+        <button type="button" class="swatch" data-skin="amber" title="Charcoal + amber" aria-label="Charcoal + amber"></button>
+        <button type="button" class="swatch" data-skin="snow" title="White + orange" aria-label="White + orange"></button>
+        <button type="button" class="swatch" data-skin="slate" title="Slate + blue" aria-label="Slate + blue"></button>
+      </div>
+    </div>
+  </div>
   <script src="/site.js"></script>
+  <script src="/skins.js"></script>
 </body>
 </html>
